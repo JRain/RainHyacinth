@@ -1,0 +1,4 @@
+﻿Kernel是RainHyacinth框架的微内核
+微内核主要任务：
+1.托管RainHyacinth的运行时
+2.维护RainHyacinth的上下文信息

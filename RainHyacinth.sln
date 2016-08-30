@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainHyacinth", "RainHyacinth\RainHyacinth.csproj", "{A21676B7-3CD8-495D-905E-C93D398F06BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainHyacinth.UnitTest", "RainHyacinth.UnitTest\RainHyacinth.UnitTest.csproj", "{4A88BDAB-058A-4AEB-B5CB-D11242E47909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainHyacinth.BLL", "RainHyacinth.BLL\RainHyacinth.BLL.csproj", "{22FAEFB0-1CC8-4925-A0ED-97FC22FB9EE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A21676B7-3CD8-495D-905E-C93D398F06BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21676B7-3CD8-495D-905E-C93D398F06BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21676B7-3CD8-495D-905E-C93D398F06BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21676B7-3CD8-495D-905E-C93D398F06BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A88BDAB-058A-4AEB-B5CB-D11242E47909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A88BDAB-058A-4AEB-B5CB-D11242E47909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A88BDAB-058A-4AEB-B5CB-D11242E47909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A88BDAB-058A-4AEB-B5CB-D11242E47909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FAEFB0-1CC8-4925-A0ED-97FC22FB9EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FAEFB0-1CC8-4925-A0ED-97FC22FB9EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FAEFB0-1CC8-4925-A0ED-97FC22FB9EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FAEFB0-1CC8-4925-A0ED-97FC22FB9EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
