@@ -18,4 +18,15 @@
         /// </summary>
         public static string ReadFileTextError = "1000000002";
     }
+
+    /// <summary>
+    /// 业务性错误码 
+    /// </summary>
+    public sealed class RainHyacinthBusinessErrorCode
+    {
+        /// <summary>
+        /// 未登录
+        /// </summary>
+        public static string NotLogin = "400000";
+    }
 }
