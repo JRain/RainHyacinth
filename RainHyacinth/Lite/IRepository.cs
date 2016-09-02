@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using RainHyacinth.Lite.Imp;
 
 namespace RainHyacinth.Lite
@@ -25,6 +26,11 @@ namespace RainHyacinth.Lite
         /// </summary>
         /// <param name="entity">数据实体</param>
         void Add(T entity);
+        /// <summary>
+        /// 异步批量添加实体
+        /// </summary>
+        /// <param name="entities"></param>
+        void AddBeachAsync(IList<T> entities);
 
         /// <summary>
         /// 更新数据

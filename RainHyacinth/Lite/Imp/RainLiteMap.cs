@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity.Migrations;
 using System.Data.Entity.ModelConfiguration;
 
 namespace RainHyacinth.Lite.Imp
@@ -30,5 +31,21 @@ namespace RainHyacinth.Lite.Imp
         {
             return "dbo";
         }
+    }
+
+    public abstract class RainLiteDbMigration<T> : DbMigration
+    {
+        protected Type GenericType => typeof(T);
+        public virtual string TableName()
+        {
+            return GenericType.FullName.Substring(GenericType.FullName.LastIndexOf('.') + 1);
+        }
+
+        public virtual string SchemaName()
+        {
+            return "dbo";
+        }
+
+        public string Table => SchemaName() + "." + TableName();
     }
 }

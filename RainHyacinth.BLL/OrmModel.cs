@@ -9,8 +9,9 @@ namespace RainHyacinth.BLL
 {
     public class OrmModel : RainLite
     {
-
+        public string Name { get; set; }
     }
+
     public class OrmMap : RainLiteMap<OrmModel>, IRainLiteMap
     {
         public OrmMap() : base()
@@ -22,6 +23,7 @@ namespace RainHyacinth.BLL
     {
         void Add(OrmModel model);
         void BeachAdd(IList<OrmModel> models);
+        void Add(IList<OrmModel> models);
     }
 
     public class OrmModelService : IOrmModelService, IUintOfWorkDependencyInject
@@ -39,6 +41,10 @@ namespace RainHyacinth.BLL
         }
 
         public void BeachAdd(IList<OrmModel> models)
+        {
+            _repository.Value.AddBeachAsync(models);
+        }
+        public void Add(IList<OrmModel> models)
         {
             foreach (var model in models)
             {

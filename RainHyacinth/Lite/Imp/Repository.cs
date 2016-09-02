@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
@@ -58,6 +59,28 @@ namespace RainHyacinth.Lite.Imp
                 throw new RainHyacinthException(LiteErrorCode.AddEntityError, msg, dbEx);
             }
         }
+
+        public void AddBeachAsync(IList<T> entities)
+        {
+            if (entities == null || !entities.Any())
+                throw new ArgumentNullException(nameof(entities), "add entities is null");
+            var i = 0;
+            double maxLimit=5000.00;
+            var limitTime = 3;
+            var time = (int)Math.Ceiling(entities.Count / maxLimit);
+            if (time > limitTime) throw new RainHyacinthException("", $"{nameof(entities)}长度超出限制，最多{maxLimit * limitTime}个");
+            foreach (var entity in entities)
+            {
+                Add(entity);
+                i++;
+                if (i % maxLimit == 1 || i == entities.Count)
+                {
+                    Context.SaveChanges();
+                }
+
+            }
+        }
+
         /// <summary>
         /// 更新数据
         /// </summary>

@@ -107,6 +107,7 @@
     <Compile Include="Lite\LiteDependcyInjectRegister.cs" />
     <Compile Include="Lite\LiteErrorCode.cs" />
     <Compile Include="Lite\IRainLiteContextContainer.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RainHyacinthErrorCode.cs" />
     <Compile Include="Utils\AssemblyUtil.cs" />
     <Compile Include="Utils\DirectoryUtil.cs" />

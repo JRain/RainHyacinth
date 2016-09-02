@@ -1,6 +1,4 @@
-﻿using System.Collections.Concurrent;
-
-namespace RainHyacinth.Lite
+﻿namespace RainHyacinth.Lite
 {
     /// <summary>
     /// RainLiteContext容器
@@ -13,5 +11,7 @@ namespace RainHyacinth.Lite
         /// <param name="name"></param>
         /// <returns></returns>
         IRainLiteContext GetRainLiteContext(string name);
+
+        IRainLiteContext GetDefaultContext();
     }
 }
